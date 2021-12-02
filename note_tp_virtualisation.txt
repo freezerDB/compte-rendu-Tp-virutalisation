@@ -1,0 +1,9 @@
+# Partie 1:
+** 1)Création d'un container debian buster 01
+** 2) la commande date affiche une date differente de celui de l'hote. Ce qui est normal.
+La commande cpuinfo nous montre les informations du cpu. La containerisation permet juste d'avoir un environnement different par contre les informations relatives au matériel du système resteront semblables à celui du système hôte.
+la commande free -h retourne les informations memoire du systeme (taille systeme choisi lors de l'initialisation 23Gb), on a : pas de taille swap non requis ici, 13GB disponible avec 8 Mo de memoire partagé.
+
+** 3) creation d'un serveur ssh . La connection du systeme hote vers le container est bien possible.
+
+** 4) creation d'un container nginx. On a les mêmes configs sauf pas la meme adresse, et on a aussi une connection avec le container buster01. On installe ensuite nginx avec apt.
